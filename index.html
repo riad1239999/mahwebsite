@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Riad's Fun Website</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init("l6MWc9t_qXIlOhO3q");
+    })();
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1 class="rainbow-text">Welcome to Riad's Website!</h1>
+    <div class="bouncing-ball"></div>
+    <div class="fun-box">
+      <h2>Click me for a surprise! 🎉</h2>
+      <p>Try hovering over me too! 🌈</p>
+    </div>
+    <div class="joke-container">
+      <button id="jokeBtn">Tell me a joke! 😄</button>
+      <p id="jokeText"></p>
+    </div>
+    <div class="request-container">
+      <textarea id="requestInput" placeholder="Type what you want to add..."></textarea>
+      <button id="sendRequestBtn">Send To Email</button>
+      <p id="requestStatus"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
