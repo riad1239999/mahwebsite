@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
@@ -8,7 +7,7 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script type="text/javascript">
-    (function () {
+    (function() {
       emailjs.init("l6MWc9t_qXIlOhO3q");
     })();
   </script>
@@ -25,7 +24,6 @@
     }
   </style>
 </head>
-
 <body>
   <div class="container">
     <h1 class="rainbow-text">Welcome to Riad's Website!</h1>
@@ -48,20 +46,21 @@
       <div class="controls">
         <p>Controls: Press SPACEBAR to switch lanes</p>
         <p>Dodge the zombies by switching lanes!</p>
-        <p style="color: #ff6b6b;">Sorry whoever said to add Dead Rails - I couldn't add the real Roblox game. That
-          would be hard and cost cloud gaming server money bruh</p>
+        <p style="color: #ff6b6b;">Sorry whoever said to add Dead Rails - I couldn't add the real Roblox game. That would be hard and cost cloud gaming server money bruh</p>
       </div>
       <canvas id="gameCanvas" width="800" height="400"></canvas>
     </div>
   </div>
 
-  <!-- Hidden image shown at bottom scroll -->
-  <img id="bottomImage" src="Contact Us_ - yacinebaya9@gmail.com - Gmail - Google Chrome 6_11_2025 9_26_14 PM.png"
-    alt="Contact Us">
+  <!-- Spacer to make page scrollable -->
+  <div style="height: 1000px;"></div>
+
+  <!-- Hidden image that shows at bottom -->
+  <img id="bottomImage" src="Contact Us_ - yacinebaya9@gmail.com - Gmail - Google Chrome 6_11_2025 9_26_14 PM.png" alt="Contact Us">
 
   <script src="script.js"></script>
   <script>
-    window.addEventListener('scroll', function () {
+    window.addEventListener('scroll', function() {
       const scrollTop = window.scrollY;
       const windowHeight = window.innerHeight;
       const bodyHeight = document.body.offsetHeight;
@@ -72,5 +71,4 @@
     });
   </script>
 </body>
-
 </html>
