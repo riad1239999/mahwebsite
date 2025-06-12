@@ -17,11 +17,27 @@
       position: fixed;
       bottom: 10px;
       right: 10px;
-      width: 700px; /* big image */
+      width: 700px;
       z-index: 9999;
       border: 2px solid #000;
       border-radius: 8px;
       box-shadow: 0 0 20px black;
+    }
+
+    #wasmerGame {
+      width: 100%;
+      height: 600px;
+      border: none;
+      margin-top: 20px;
+    }
+
+    .game-embed-title {
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      color: #ff914d;
+      margin-top: 60px;
+      font-family: 'Arial', sans-serif;
     }
   </style>
 </head>
@@ -58,6 +74,10 @@
 
   <!-- Image shown when scroll reaches bottom -->
   <img id="bottomImage" src="contact.png" alt="Contact Us">
+
+  <!-- Food Sim Section -->
+  <div class="game-embed-title">🍔 Food Sim 🍕</div>
+  <iframe id="wasmerGame" src="https://rfrfrf-27298.wasmer.app/" title="Food Sim"></iframe>
 
   <script src="script.js"></script>
   <script>
