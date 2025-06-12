@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Riad's Fun Website</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init("l6MWc9t_qXIlOhO3q");
+    })();
+  </script>
+  <style>
+    #bottomImage {
+      display: none;
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      width: 700px; /* big image */
+      z-index: 9999;
+      border: 2px solid #000;
+      border-radius: 8px;
+      box-shadow: 0 0 20px black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="rainbow-text">Welcome to Riad's Website!</h1>
+    <div class="bouncing-ball"></div>
+    <div class="fun-box">
+      <h2>Click me for a surprise! 🎉</h2>
+      <p>Try hovering over me too! 🌈</p>
+    </div>
+    <div class="joke-container">
+      <button id="jokeBtn">Tell me a joke! 😄</button>
+      <p id="jokeText"></p>
+    </div>
+    <div class="request-container">
+      <textarea id="requestInput" placeholder="Type what you want to add..."></textarea>
+      <button id="sendRequestBtn">Send To Email</button>
+      <p id="requestStatus"></p>
+    </div>
+    <div class="game-container">
+      <h2>Dead Rails: Train Dodging</h2>
+      <div class="controls">
+        <p>Controls: Press SPACEBAR to switch lanes</p>
+        <p>Dodge the zombies by switching lanes!</p>
+        <p style="color: #ff6b6b;">Sorry whoever said to add Dead Rails - I couldn't add the real Roblox game. That would be hard and cost cloud gaming server money bruh</p>
+      </div>
+      <canvas id="gameCanvas" width="800" height="400"></canvas>
+    </div>
+  </div>
+
+  <!-- Spacer to allow scroll -->
+  <div style="height: 1000px;"></div>
+
+  <!-- Image shown when scroll reaches bottom -->
+  <img id="bottomImage" src="contact.png" alt="Contact Us">
+
+  <script src="script.js"></script>
+  <script>
+    window.addEventListener('scroll', function() {
+      const scrollTop = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const bodyHeight = document.body.offsetHeight;
+
+      if (scrollTop + windowHeight >= bodyHeight - 10) {
+        document.getElementById('bottomImage').style.display = 'block';
+      }
+    });
+  </script>
+</body>
+</html>
