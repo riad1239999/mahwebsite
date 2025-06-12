@@ -14,11 +14,9 @@
   <style>
     #bottomImage {
       display: none;
-      position: fixed;
-      bottom: 10px;
-      right: 10px;
-      width: 700px;
-      z-index: 9999;
+      width: 400px;
+      margin: 20px auto;
+      display: block;
       border: 2px solid #000;
       border-radius: 8px;
       box-shadow: 0 0 20px black;
@@ -40,12 +38,15 @@
       font-family: 'Arial', sans-serif;
     }
 
-    .more-stuff-text {
+    .more-stuff-section {
       text-align: center;
+      padding: 100px 0;
+    }
+
+    .more-stuff-text {
       font-size: 48px;
       font-weight: bold;
       color: #5f27cd;
-      padding: 100px 0;
       font-family: 'Comic Sans MS', cursive, sans-serif;
     }
   </style>
@@ -78,11 +79,11 @@
     </div>
   </div>
 
-  <!-- Spacer to allow scroll with funny text -->
-  <div class="more-stuff-text">LOL MORE STUFF</div>
-
-  <!-- Image shown when scroll reaches bottom -->
-  <img id="bottomImage" src="contact.png" alt="Contact Us">
+  <!-- LOL MORE STUFF Section with contact.png -->
+  <div class="more-stuff-section">
+    <div class="more-stuff-text">LOL MORE STUFF</div>
+    <img id="bottomImage" src="contact.png" alt="Contact Us">
+  </div>
 
   <!-- Food Sim Section -->
   <div class="game-embed-title">🍔 Food Sim 🍕</div>
